@@ -1,7 +1,7 @@
 - hosts: 127.0.0.1
   connection: local
   tasks:
-  - name: delete deployment for frontend 
+  - name: deleted deployment for frontend 
     command: kubectl delete -f deploymentfront.yaml
 
   - name: deleted deployment for postgres
