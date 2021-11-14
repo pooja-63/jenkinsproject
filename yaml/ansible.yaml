@@ -1,0 +1,21 @@
+hosts: all
+tasks:
+
+- name: delete deployment for frontend 
+  command: kubectl delete -f deploymentfront.yaml
+
+- name: create new deployment for frontend 
+  command: kubectl apply -f deploymentfront.yaml
+
+- name: delete deployment for backend 
+  command: kubectl delete -f deployment1.yaml
+
+- name: create new deployment for backend 
+  command: kubectl apply -f deployment1.yaml
+
+- name: delete deployment for postgres 
+  command: kubectl delete -f deploymentpostgres.yaml
+
+- name: create deployment for postgres
+  command: kubectl apply -f deploymentpostgres.yaml
+  
