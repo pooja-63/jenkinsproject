@@ -7,7 +7,7 @@
   - name: delete deployment for postgres
     command: kubectl delete -f deploymentpostgres.yaml
 
-  - name: deleted deployment for backend 
+  - name: delete deployment for backend 
     command: kubectl delete -f deployment1.yaml
     
   - name: create new deployment for frontend 
